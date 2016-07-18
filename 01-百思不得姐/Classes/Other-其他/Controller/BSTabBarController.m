@@ -53,11 +53,11 @@
 //添加子控制器
 -(void)setupChildViewControllers{
     
-    [self setupOneClidViewController:[[BSEssenceViewController alloc]init] title:@"精华" image:@"tabBar_essence_icon" selectImage:@"tabBar_essence_click_icon"];
-    [self setupOneClidViewController:[[BSNewViewController alloc]init] title: @"新帖" image:@"tabBar_new_icon" selectImage:@"tabBar_new_click_icon"];
+    [self setupOneClidViewController:[[UINavigationController alloc] initWithRootViewController:[[BSEssenceViewController alloc]init] ]title:@"精华" image:@"tabBar_essence_icon" selectImage:@"tabBar_essence_click_icon"];
+    [self setupOneClidViewController:[[UINavigationController alloc] initWithRootViewController:[[BSNewViewController alloc]init]] title: @"新帖" image:@"tabBar_new_icon" selectImage:@"tabBar_new_click_icon"];
     
-    [self setupOneClidViewController:[[BSFollowViewController alloc]init] title:@"关注" image:@"tabBar_friendTrends_icon" selectImage:@"tabBar_friendTrends_click_icon"];
-    [self setupOneClidViewController:[[BSMeViewController  alloc]init] title:@"我" image:@"tabBar_me_icon" selectImage:@"tabBar_me_click_icon"];
+    [self setupOneClidViewController:[[UINavigationController alloc] initWithRootViewController:[[BSFollowViewController alloc]init]] title:@"关注" image:@"tabBar_friendTrends_icon" selectImage:@"tabBar_friendTrends_click_icon"];
+    [self setupOneClidViewController:[[UINavigationController alloc] initWithRootViewController:[[BSMeViewController  alloc]init]] title:@"我" image:@"tabBar_me_icon" selectImage:@"tabBar_me_click_icon"];
     
 }
 //初始化一个子控制器
